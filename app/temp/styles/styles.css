@@ -452,7 +452,7 @@ template {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color:#333;
+  color: #333;
 }
 
 img {
@@ -461,30 +461,26 @@ img {
 }
 
 .btn {
-  background-color:#1d3557;
-  color:#fff;
+  background-color: #1d3557;
+  color: #fff;
   text-decoration: none;
-  padding: .75rem 1.2rem;
-  display:inline-block;
+  padding: 0.75rem 1.2rem;
+  display: inline-block;
 }
 
 .btn__orange {
-    background-color:#dd8935
+    background-color: #dd8935;
   }
 
 .btn__large {
     font-size: 1.25rem;
     padding: 1.1rem 1.9rem;
-
-
   }
 
 @media (min-width: 530px) {
 
 .btn__large {
       font-size: 1.3rem
-
-
   }
   }
 
@@ -565,6 +561,33 @@ img {
 }
 
 .page-section__blue {
-      background: #1d3557;
-      color:#f5faf3;
+    background: #1d3557;
+    color: #f5faf3;
+  }
+
+.headline {
+  font-weight: 300;
+  font-size: 2.875rem;
+}
+
+.headline__centered {
+    text-align: center;
+  }
+
+.headline__orange {
+    color: #dd8935;
+  }
+
+.headline__small {
+    font-size: 1.875rem;
+  }
+
+.headline__narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.headline__narrow__light {
+      font-weight: 100;
     }
