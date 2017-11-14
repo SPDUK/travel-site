@@ -3,7 +3,7 @@ var gulp = require('gulp'),
   autoprefixer = require('autoprefixer'),
   cssvars = require('postcss-simple-vars'),
   nested = require('postcss-nested'),
-  cssimport = require('postcss-import'),
+  cssImport = require('postcss-import'),
   mixins = require('postcss-mixins');
 
 

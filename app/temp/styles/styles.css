@@ -588,6 +588,14 @@ img {
     margin-right: auto;
   }
 
-.headline__narrow__light {
-      font-weight: 100;
-    }
+.headline__light {
+    font-weight: 100;
+  }
+
+.headline__b_margin_small {
+    margin-bottom: 0.5em;
+  }
+
+.headline__b_margin_large {
+    margin-bottom: 1.6em;
+  }

@@ -18,9 +18,17 @@
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+  }
 
-    &__light {
-      font-weight: 100;
-    }
+  &__light {
+    font-weight: 100;
+  }
+
+  &__b_margin_small {
+    margin-bottom: 0.5em;
+  }
+
+  &__b_margin_large {
+    margin-bottom: 1.6em;
   }
 }
