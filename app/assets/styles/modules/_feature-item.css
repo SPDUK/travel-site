@@ -6,7 +6,7 @@
     padding-left: 94px;
   }
 
-  &__icon {
+  &--icon {
     display: block;
     margin: 0 auto;
 
@@ -16,7 +16,7 @@
     }
   }
 
-  &__title {
+  &--title {
     font-size: 1.6rem;
     font-weight: 300;
     margin-top: 0.7em;
