@@ -3,13 +3,20 @@
   position: absolute;
   z-index: 2;
   width: 100%;
+  transition: background-color 0.3s ease-out;
 
   @mixin atMedium {
     background-color: rgba(29, 53, 87, 0.3);
   }
 
+  &__expanded {
+    background-color: rgba(29, 53, 87, 0.7);
+  }
+
   &__btn {
-    float: right;
+    @mixin atMedium {
+      float: right;
+    }
   }
 
   &__logo {
@@ -46,10 +53,21 @@
   }
 
   &__menu {
-    display: none;
+    opacity: 0;
+    padding-top: 80px;
+    text-align: center;
+    z-index: -10;
+    position: relative;
 
     @mixin atMedium {
-      display: block;
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+    }
+
+    &-visible {
+      opacity: 1;
+      z-index: -10;
     }
   }
 }
