@@ -475,10 +475,12 @@ a {
   text-decoration: none;
   padding: 0.75rem 1.2rem;
   display: inline-block;
+  border: 0.05em solid #6693ae;
 }
 
 .btn--orange {
     background-color: #dd8935;
+    border: 0.05em solid #ffac63;
   }
 
 .btn--large {
@@ -1133,7 +1135,8 @@ Edit gulp/templates/sprite.css instead */
     background-color: #1d3557;
     padding: 0.8rem;
     top: 0;
-    border: 3px solid #6693ae;
+    border: 0.05em solid #6693ae;
+    border-top: 0;
   }
 
 @media (min-width: 800px) {
@@ -1235,6 +1238,8 @@ Edit gulp/templates/sprite.css instead */
     text-align: center;
     z-index: -10;
     position: relative;
+    -webkit-transition: opacity 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
   }
 
 @media (min-width: 800px) {
@@ -1249,10 +1254,11 @@ Edit gulp/templates/sprite.css instead */
 .site-header__menu-visible {
       opacity: 1;
       z-index: 1;
+      -webkit-transition: opacity 0.4s ease-in;
+      transition: opacity 0.4s ease-in;
     }
 
 .primary-nav {
-
   padding-top: 10px;
 }
 
@@ -1315,6 +1321,7 @@ Edit gulp/templates/sprite.css instead */
     padding: 5px 8px;
     font-size: 0.9rem;
     background-color: rgba(29, 53, 87, 0.4);
+    border: solid 0.05em #1d3557;
   }
 
 @media (min-width: 800px) {
@@ -1322,6 +1329,17 @@ Edit gulp/templates/sprite.css instead */
 .primary-nav a {
       padding: 12px 0;
       font-size: 1rem;
-      background-color: transparent
+      background-color: transparent;
+      border:none
   }
+  }
+
+.reveal-item {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s ease-out;
+  transition: opacity 1.5s ease-out;
+}
+
+.reveal-item--is-visible {
+    opacity: 1;
   }

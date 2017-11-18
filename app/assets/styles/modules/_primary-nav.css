@@ -1,6 +1,6 @@
 .primary-nav {
-
   padding-top: 10px;
+
   @mixin atMedium {
     padding-top: 0;
   }
@@ -42,11 +42,13 @@
     padding: 5px 8px;
     font-size: 0.9rem;
     background-color: rgba(29, 53, 87, 0.4);
+    border: solid 0.05em $mainBlue;
 
     @mixin atMedium {
       padding: 12px 0;
       font-size: 1rem;
       background-color: transparent;
+      border:none;
     }
   }
 }
