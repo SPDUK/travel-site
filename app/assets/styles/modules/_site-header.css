@@ -7,6 +7,11 @@
 
   @mixin atMedium {
     background-color: rgba(29, 53, 87, 0.3);
+    position: fixed;
+
+    &--dark {
+      background-color: rgba(29, 53, 87, 0.93);
+    }
   }
 
   &__expanded {
@@ -23,16 +28,21 @@
     left: 50%;
     transform: translateX(-50%) scale(0.8);
     transform-origin: 50% 0;
+    transition: transform 0.3s ease-out;
     position: absolute;
     background-color: $mainBlue;
     padding: 0.8rem;
     top: 0;
-    border: 0.05em solid $mainLightBlue;
+    border: 1px solid $mainLightBlue;
     border-top: 0;
 
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
+
+      .site-header--dark & {
+        transform: scale(0.74);
+      }
     }
   }
 
