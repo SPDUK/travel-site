@@ -1346,6 +1346,10 @@ Edit gulp/templates/sprite.css instead */
       background-color: transparent;
       border:none
   }
+
+      .primary-nav a.is-current-link {
+        color: #dd8935;
+      }
   }
 
 .reveal-item {
