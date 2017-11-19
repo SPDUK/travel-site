@@ -23,10 +23,10 @@
 
   &--gutters-small {
     margin-right: -45px;
-
   }
+
   &--gutters-small > div {
-    padding-right:45px;
+    padding-right: 45px;
   }
 
   &__b-margin-until-medium {
@@ -73,6 +73,11 @@
     width: 50%;
       }
 
+  &__large-4 {
+    float:left;
+    width: 33.33%;
+  }
+
   &__large-4--larger {
     width: 37%;
   }
@@ -87,18 +92,18 @@
   }
 
   /* Begin Equal Height Rules */
-  &--equal-height-at-medium {
+  .flexbox &--equal-height-at-medium {
     @mixin atMedium {
       display: flex;
     }
 
     & > div {
       float: none;
-      display:flex;
+      display: flex;
     }
   }
 
-  &--equal-height-at-large {
+  .flexbox &--equal-height-at-large {
     @mixin atLarge {
       display: flex;
     }
